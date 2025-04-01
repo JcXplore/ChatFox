@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div>
+  
     <header> <!--Navigation-->
-      <div>
+      <div class="logo-container">
         <a href="#">
           <img src="./assets/logo.png" alt="Logo" class="logo">
           <h1>ChatFox</h1>
@@ -22,29 +27,39 @@
       </div>
     </header>
     <main> <!--Main Content-->
-      <button>
+      <button title="Open Chat History" class="side-bar-shortcut">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm440-80h120v-560H640v560Zm-80 0v-560H200v560h360Zm80 0h120-120Z"/></svg>
       </button>
+      <button title="New message" class="new-message-shortcut">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-120H200Zm280-360ZM360-360v-170l367-367q12-12 27-18t30-6q16 0 30.5 6t26.5 18l56 57q11 12 17 26.5t6 29.5q0 15-5.5 29.5T897-728L530-360H360Zm481-424-56-56 56 56ZM440-440h56l232-232-28-28-29-28-231 231v57Zm260-260-29-28 29 28 28 28-28-28Z"/></svg>
+      </button>
+      <button title="Phone Download" class="phone-download-shortcut">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg>
+      </button>
+      <button title="theme" class="theme-shortcut">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0-80q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0 220 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"/></svg>
+      </button>
       
-      <div id="history-container">
-        <button type="button" class="history-button" aria-label="Open Chat History">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-80v-560H200v560h120Zm80 0h360v-560H400v560Zm-80 0H200h120Z"/></svg>
-        </button>
-      </div>
-        <div>
+      <div class="center-content">
+        <div class="main-logo">
           <img src="./assets/logo.png" alt="logo" class="main-logo">
           <h2>Hi, I am ChatFox</h2>
           <h3>What can I help you with</h3>
         </div>
-        <div class="message-container"></div>
+
+        <div class="message-container">
+
+        </div>
 
         <form class="input-container">
           <input type="text" placeholder="Ask anything..." class="input-field">
-          <button class="send-button">Send</button>
+          <button class="send-button" title="send-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
+          </button>
         </form>
 
-        <div id="faq">
-          <div id="faq">
+        <div class="faq-container">
+          <div class="faq" >
             <button>What are the office hours of the Registrar&#39;s Office?</button>
             <button>How do I request a copy of my transcript of records (TOR)?</button>
             <button>What are the requirements for enrollment?</button>
@@ -52,8 +67,30 @@
             <button>Where is the Registrar&#39;s Office located?</button>
           </div>
         </div>
+      </div>
+      <div class="history-container"> <!-- When logged out  -->
+        <div class="history-header">
+          <div class="history-logo-container">
+            <img src="" alt="logo">
+            <h2>ChatFox</h2>
+          </div>
+          <button class="history-button" title="Close Chat History">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-80v-560H200v560h120Zm80 0h360v-560H400v560Zm-80 0H200h120Z"/></svg>
+          </button>
+        </div>
+        <div class="history-list-container">
+          <div class="history-new-chat">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-160v-600q0-33 23.5-56.5T200-840h480q33 0 56.5 23.5T760-760v203q-10-2-20-2.5t-20-.5q-10 0-20 .5t-20 2.5v-203H200v400h283q-2 10-2.5 20t-.5 20q0 10 .5 20t2.5 20H240L120-160Zm160-440h320v-80H280v80Zm0 160h200v-80H280v80Zm400 280v-120H560v-80h120v-120h80v120h120v80H760v120h-80ZM200-360v-400 400Z"/></svg>
+            <h2>New chat</h2>
+          </div>
+          <div class="history-list">
+             <p>Login first to see your account's chat history</p>
+             <button>Login </button>
+        </div>
+        
+      </div>
     </main>
-  </div>
+    
   <script src="./script.js"></script>
 </body>
 </html>
