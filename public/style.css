@@ -1,0 +1,204 @@
+body{
+    background-color: #212121;
+    font-family: "Inter", sans-serif;;
+    color: #D1D1D1;
+}
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #ffffff9a;
+}
+header .logo-container a, .login-container a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+header .logo-container img, .login-container img {
+    width: 50px;
+    height: 50px;
+}
+header .logo-container h1 {
+    font-size: 1.5rem;
+    color: #D1D1D1;
+    font-weight: 600;
+}
+
+header .login-container p{
+    font-size: 1rem;
+    color: #D1D1D1;
+    font-weight: 400;
+}
+
+main .center-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+main .main-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .main-logo img{
+    width: 150px;
+    height: 150px;
+    background-color: #ff0000;
+}
+main .main-logo h2{
+    font-size: 2rem;
+    color: #D1D1D1;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+}
+main .main-logo h3{
+    font-size: 1rem;
+    color: #D1D1D1;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+main .input-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #303030;
+    padding: 15px 20px;
+    border-radius: 100px;
+    width: 28%;
+}
+
+main .faq-container{
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    width: 100%;
+}
+
+main .faq{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    max-width: 900px; 
+    justify-content: center; 
+}
+main .faq button{
+    background-color: #515151;
+    color: white;
+    border: none;
+    font-weight: 200;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+main .history-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    max-width: 50%;
+    padding: 45px 20px;
+    background-color: #171717;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+main .history-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffffff9a;
+}
+main .history-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+main .history-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+main .history-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: 100%; 
+}
+main .history-list button{
+    padding: 2px 15px;
+    background-color: #515151;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+main .history-new-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #302cff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 20px;
+    top: 110px;
+    gap: 5px;
+}
+
+main .side-bar-shortcut{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+main .new-message-shortcut{
+    position: absolute;
+    left: 10px;
+    top: 135px;
+}
+main .phone-download-shortcut{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+main .theme-shortcut{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+main .side-bar-shortcut, .new-message-shortcut,.phone-download-shortcut, .theme-shortcut{
+    scale: 1.1;
+    
+}
+
